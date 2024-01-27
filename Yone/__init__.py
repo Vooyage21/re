@@ -1,4 +1,5 @@
-import logging, os, sys, time
+import logging, os, sys, time, tg
+import telegram.ext as tg
 from telethon.sessions import MemorySession
 from telethon import TelegramClient
 
@@ -102,7 +103,7 @@ else:
     URL = Config.URL
 
 
-telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-
+telethn = tg.TelegramClient(MemorySession(), API_ID, API_HASH)
+dispatcher = updater.dispatcher
 
 
