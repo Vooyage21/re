@@ -102,7 +102,7 @@ else:
     URL = Config.URL
 
 
-updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+updater = Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
