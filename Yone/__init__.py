@@ -103,7 +103,7 @@ else:
 
 
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-dispatcher = updater.dispatcher
+dispatcher = dispatcher
 
 
 
