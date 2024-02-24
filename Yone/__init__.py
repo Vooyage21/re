@@ -33,16 +33,11 @@ if ENV:
         OWNER_ID = os.environ.get("OWNER_ID", None)
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
-    try:
-        INSPECTOR = {int(x) for x in os.environ.get("INSPECTOR", "").split()}
+    try:        
         DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "").split()}
     except ValueError:
         raise Exception("Your inspector(sudo) or dev users list does not contain valid integers.")
-
-    try:
-        REQUESTER = {int(x) for x in os.environ.get("REQUESTER", "").split()}
-    except ValueError:
-        raise Exception("Your requester list does not contain valid integers.")
+    
     try:
         API_ID = int(os.environ.get("API_ID", None))
     except ValueError:
@@ -53,8 +48,7 @@ if ENV:
     except ValueError:
         raise Exception("Please Add Hash Api key to start the bot")
 
-    DB_URI = os.environ.get("DATABASE_URL")
-    KORA_API_TOKEN = os.environ.get("KORA_API_TOKEN")
+    DB_URI = os.environ.get("DATABASE_URL") 
     PHOTO = os.environ.get("PHOTO")
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
@@ -68,7 +62,7 @@ if ENV:
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     CERT_PATH = os.environ.get("CERT_PATH")
     URL = os.environ.get("URL", "")  # Does not contain token
-    PORT = int(os.environ.get("PORT", 5000))
+    
 
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
