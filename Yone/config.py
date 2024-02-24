@@ -31,16 +31,10 @@ class Config(object):
     )  # Prints information Error
 
     # RECOMMENDED
-    DATABASE_URL = "postgres://kwzssizt:QQVjmnJsftOrq2V2FKkrScuGa__K8QQq@lallah.db.elephantsql.com/kwzssizt"
+    DB_URI = "postgres://kwzssizt:QQVjmnJsftOrq2V2FKkrScuGa__K8QQq@lallah.db.elephantsql.com/kwzssizt"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
-    WEBHOOK = False
-    INFOPIC = True
-    ALIVE_MEDIA = "OK"
-    ALLOW_CHATS = True
-    L_CHAT = "12345678"
-    MONGO_DB_URI = "mongodb+srv://Zeeki:Zeeki@zeeki-one.cmmfnli.mongodb.net/?retryWrites=true&w=majority"
-    URL = None
+    WEBHOOK = False    
     
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
@@ -60,22 +54,8 @@ class Config(object):
     WORKERS = (
         8  # Number of subthreads to use. Set as number of threads your processor uses
     )
-    BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
-    ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
-    CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
-    )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
-    WALL_API = (
-        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
-    )
-    AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
-    BL_CHATS = []  # List of groups that you want blacklisted.
-    SPAMMERS = None
-    REM_BG_API_KEY = "xYCR1ZyK3ZsofjH7Y6hPcyzC"
-    OPENWEATHERMAP_ID = "887da2c60d9f13fe78b0f9d0c5cbaade"
-
-
+    
+    
 class Production(Config):
     LOGGER = True
 
