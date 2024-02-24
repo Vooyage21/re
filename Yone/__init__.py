@@ -1,4 +1,4 @@
-import logging, os, sys, time, tg, telegram.ext
+import logging, os, sys, time, telegram.ext
 import telegram.ext as tg
 from telethon.sessions import MemorySession
 from telethon import TelegramClient
