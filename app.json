@@ -34,47 +34,52 @@
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "3160248"
+       "value": "26724473"
     },
     "API_HASH": {
        "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "da866bcad3446898c4d4a20fa10b9d09"
+       "value": "7bc7d1f9b2f3d3f1bfd272db56ac0ba1"
     },    
     "SQLALCHEMY_DATABASE_URI": {
        "description": "Your postgres sql db, empty this field if you dont have one.",
        "required": false,
-       "value": "sqldbtype://username:pw@hostname:port/db_name"
+       "value": "postgres://thpyouro:Xt9VN1Ybhm9bs8SBk-DU6Jwd6nt_BuGn@bubble.db.elephantsql.com/thpyouro"
     },      
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": "1697409878"
+       "value": "940232666"
+        },      
+    "EVENT_LOGS": {
+       "description": "Log Group.",
+       "required": true,
+       "value": "-1002127323522"
     },
 
     "BOT_NAME": {
        "description": "Insert below your bot, it will appear everywhere",
        "required": true,
-       "value": ""
+       "value": "Mizu Robot"
     },
     "OWNER_USERNAME": {
        "description": "Your username without the @",
-       "value": "kumjojass"
+       "value": "Usern4meDoesNotExist404"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
        "required": true,
-       "value": "league_of_bots"   
+       "value": ""   
    },  
     "PHOTO": {
        "description": "Your Telegram Bot Image (Add Link Only).",
        "required": true,
-       "value": "https://telegra.ph/file/b749b0e80e82291e85e10.jpg"
+       "value": "https://mallucampaign.in/images/img_1708346123.jpg"
     },      
     "DEV_USERS": {
        "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
        "required": false,
-       "value": ""   
+       "value": "940232666"   
     },
     "ENV": {
        "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -83,7 +88,7 @@
     "WEBHOOK": {
        "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
        "required": false,
-       "value": ""    
+       "value": "ANYTHING"    
     },
     "No_LOAD": {
        "description": "Dont load these modules cause they shit, space separation",
