@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/TaigaRobot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/Yone/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -15,10 +15,7 @@ class Config(object):
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
     API_ID = 19704307  # integer value, dont use ""
-    API_HASH = "031ab037968003ac20ec180d9ec3e07b"
-    ARQ_API = "hoi"
-    ARQ_API_KEY = "okoko"
-    ARQ_API_URL = "okoko"
+    API_HASH = "031ab037968003ac20ec180d9ec3e07b"    
     TOKEN = "6254865362:AAHq3xj36h82o34CRKX5t5hDFV4lLD-TNmc"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 945137470  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "saint_foire"
@@ -34,7 +31,6 @@ class Config(object):
     )  # Prints information Error
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://kwzssizt:QQVjmnJsftOrq2V2FKkrScuGa__K8QQq@lallah.db.elephantsql.com/kwzssizt"  # needed for any database modules
     DATABASE_URL = "postgres://kwzssizt:QQVjmnJsftOrq2V2FKkrScuGa__K8QQq@lallah.db.elephantsql.com/kwzssizt"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
@@ -45,9 +41,7 @@ class Config(object):
     L_CHAT = "12345678"
     MONGO_DB_URI = "mongodb+srv://Zeeki:Zeeki@zeeki-one.cmmfnli.mongodb.net/?retryWrites=true&w=majority"
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
-    SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-
+    
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
     DRAGONS = get_user_list("elevated_users.json", "sudos")
