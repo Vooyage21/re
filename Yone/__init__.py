@@ -93,8 +93,7 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     WEBHOOK = Config.WEBHOOK
     CERT_PATH = Config.CERT_PATH
-    PORT = Config.PORT
-    URL = Config.URL
+    
 
 
 telethn = tg.TelegramClient(MemorySession(), API_ID, API_HASH)
