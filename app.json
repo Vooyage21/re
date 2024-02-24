@@ -64,11 +64,7 @@
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
        "required": true,
-       "value": "league_of_bots"
-    },    
-    "KORA_API_TOKEN": {
-      "description": "generate your kora api token from @Camille_Robot",
-      "value": ""
+       "value": "league_of_bots"   
    },  
     "PHOTO": {
        "description": "Your Telegram Bot Image (Add Link Only).",
@@ -78,17 +74,7 @@
     "DEV_USERS": {
        "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
        "required": false,
-       "value": ""
-    },
-    "INSPECTOR": {
-       "description": "A space separated list of user IDs who you want to assign as inspector users.",
-       "required": false,
-       "value": ""
-    },
-    "REQUESTER": {
-       "description": "A space separated list of user IDs who you wanna assign as requester(gban perms only).",
-       "required": false,
-       "value": ""
+       "value": ""   
     },
     "ENV": {
        "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -97,17 +83,7 @@
     "WEBHOOK": {
        "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
        "required": false,
-       "value": ""
-    },
-    "PORT": {
-       "description": "Port to use for your webhooks. Better leave this as it is on heroku",
-       "required": false,
-       "value": ""
-    },
-    "URL": {
-       "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
-       "required": false,
-       "value": ""
+       "value": ""    
     },
     "No_LOAD": {
        "description": "Dont load these modules cause they shit, space separation",
